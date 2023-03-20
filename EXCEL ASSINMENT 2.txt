@@ -1,0 +1,87 @@
+1. What does the dollar($) sign do?
+ANS- The dollar sign ($) is a symbol used to represent currency, particularly the United States dollar. It is also sometimes used to represent other currencies that are based on dollars, such as the Canadian dollar (CAD) or the Australian dollar (AUD).
+In addition to representing currency, the dollar sign is also used in computer programming languages to indicate the start of a variable name, which is a placeholder for a value that can be assigned or retrieved during program execution. For example, in the programming language JavaScript, the syntax "$variableName" is used to declare a variable named "variableName."
+The dollar sign can also be used as a shorthand to refer to the word "dollars" in a written document or conversation. For example, "I owe you $20" is equivalent to "I owe you twenty dollars."
+
+
+
+2. How to Change the Reference from Relative to Absolute (or Mixed)?
+ANS-When working with formulas in Microsoft Excel, cell references can be either relative, absolute, or mixed. A relative reference is a cell address that is relative to the position of the cell containing the formula. An absolute reference, on the other hand, refers to a fixed cell address, while a mixed reference contains both relative and absolute references.
+To change a reference from relative to absolute, you can use the dollar sign ($) symbol. The dollar sign is used to lock a reference to a specific column or row, making it an absolute reference.
+For example, if you have a formula that adds the values in cells A1 and B1 and the formula is in cell C1, the formula might look like this: "=A1+B1". If you copy and paste this formula into cell C2, the formula will adjust to "=A2+B2" because it is relative to the position of the cell.
+To make the reference to cell A1 absolute, add dollar signs before the column and row references like this: "=$A$1+B1". Now, when you copy and paste this formula into cell C2, the reference to cell A1 will remain the same.
+To create a mixed reference, you can use a dollar sign to fix either the row or column reference, but not both. For example, if you want to fix the column reference to column A but allow the row reference to change, you can use the formula "=$A1+B1". This will fix the reference to column A but allow the row reference to change as you copy and paste the formula.
+In summary, to change a reference from relative to absolute, add dollar signs ($) before the column and/or row reference. To create a mixed reference, add a dollar sign before the column or row reference that you want to fix.
+
+
+
+3. Explain the order of operations in excel?
+ANS-The order of operations in Excel refers to the sequence in which Excel performs calculations when evaluating a formula. It is important to understand this order, as it can affect the outcome of your calculations.The order of operations in Excel is as follows:
+Brackets: Excel evaluates expressions inside parentheses first.
+Exponents: Excel calculates exponents next.
+Multiplication and Division: Excel performs multiplication and division operations left to right.
+Addition and Subtraction: Excel performs addition and subtraction operations left to right.
+This order can be remembered using the acronym BEDMAS, which stands for Brackets, Exponents, Division and Multiplication, and Addition and Subtraction.
+It's important to note that you can use parentheses to override the default order of operations and force Excel to evaluate expressions in a specific order. By using parentheses, you can ensure that your calculations are performed in the desired order.
+
+
+
+4. What, according to you, are the top 5 functions in excel and write a basic syntax
+for any of two?
+ANS--SUM: Adds up a range of cells.
+Syntax: =SUM(cell1:cell2)
+
+Example: =SUM(A1:A5)
+
+AVERAGE: Calculates the average of a range of cells.
+Syntax: =AVERAGE(cell1:cell2)
+
+Example: =AVERAGE(A1:A5)
+
+COUNT: Counts the number of cells that contain numbers.
+Syntax: =COUNT(cell1:cell2)
+
+Example: =COUNT(A1:A5)
+
+MAX: Finds the maximum value in a range of cells.
+Syntax: =MAX(cell1:cell2)
+
+Example: =MAX(A1:A5)
+
+MIN: Finds the minimum value in a range of cells.
+Syntax: =MIN(cell1:cell2)
+
+Example: =MIN(A1:A5)
+
+Here are the syntax for two of the above functions:
+
+Syntax for SUM:
+
+=SUM(cell1:cell2)
+
+Example: =SUM(A1:A5)
+
+This formula adds up the values in the range A1 to A5.
+
+Syntax for AVERAGE:
+
+=AVERAGE(cell1:cell2)
+
+Example: =AVERAGE(A1:A5)
+
+This formula calculates the average of the values in the range A1 to A5.
+
+
+
+
+5. When would you use the subtotal function?
+ANS-The subtotal function is a useful tool in Excel that allows you to calculate subtotals for a selected range of data. You can use the subtotal function when you have a large dataset and want to calculate subtotals for specific groups within the data.
+Here are some situations where you might use the subtotal function:
+When you have a large dataset and want to summarize it by different categories or groups, such as by region or product type.
+When you want to calculate subtotals for a filtered range of data, such as when you filter a table by specific criteria and want to calculate subtotals for only the visible rows.
+When you want to calculate multiple levels of subtotals, such as when you want to calculate subtotals for each category within a larger group.
+The subtotal function is a powerful tool that can save you a lot of time and effort when working with large datasets in Excel.
+
+
+6. What is the syntax of the vlookup function? Explain the terms in it?
+ANS- =VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])
